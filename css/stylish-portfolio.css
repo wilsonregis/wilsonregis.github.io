@@ -28,6 +28,17 @@ body {
     font-size: 4.5em;
     font-weight: 700;
 }
+.logo {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    margin: 10px 0px 0px 10px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
 
 /* Custom Button Styles */
 
@@ -57,7 +68,7 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
+/* Custom Horizontal Rule */ 
 
 hr.small {
     max-width: 100px;
@@ -160,14 +171,37 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    overflow: hidden;
+}
+.header a {
+    font-family: "Fugaz One";
+    
+    -webkit-transform: translateX(-2000px);
+    
+    -webkit-animation: from-left 1s ease-in-out 0.2s forwards;
 }
 
+.header h3 {
+    -webkit-transform: translateX(2000px);
+    
+    -webkit-animation: from-right 1s ease-in-out 0.1s forwards;
+}
+
+header h1 {
+    font-family: "Monoton";
+    -webkit-animation: from-left 1s ease-in-out forwards;
+}
+.about p {
+    font-family: "El Messiri";
+}
 /* About */
 
 .about {
     padding: 50px 0;
 }
-
+.about h2 {
+    font-family: "Padauk";
+}
 /* Services */
 
 .services {
@@ -239,7 +273,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0px 0px 0px;
 }
 
 #to-top {
@@ -257,3 +291,127 @@ footer {
     margin-top: -23px;
     margin-left: 5px;
 }
+
+section#contact {
+    background-color: deepskyblue;
+    background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section {
+    padding: 30px 0PX;
+}
+section#contact .section-heading {
+    color: white;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: deepskyblue;
+}
+.gellary_bg_none img{
+	width: 100%;
+	height: 250px;
+}
+section#contact :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+section#contact ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #eeeeee;
+}
+section#contact :-ms-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #eeeeee;
+}
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+.about_our_company{
+    text-align: center;
+}
+.about_our_company h1{
+    font-size: 35px;
+}
+.titleline-icon {
+    position: relative;
+    max-width: 100px;
+    border-top: 4px double #F99700;
+    margin: 20px auto 20px;
+}
+.titleline-icon:after {
+    position: absolute;
+    top: -19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'FontAwesome';
+    content: "\f141";
+    font-size: 20px;
+    line-height: 1;
+    color: #F99700;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    height: 20px;
+    background: #ffffff;
+}
+ 
+.social {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+@-webkit-keyframes from-left {
+    from {
+        -webkit-transform: translateX(-2000px);
+    }
+    to {
+        -webkit-transform: translateX(0px);
+    } 
+}
+
+@-webkit-keyframes from-right {
+    from {
+        -webkit-transform: translateX(2000px);
+    }
+    to {
+        -webkit-transform: translateX(0px);
+    } 
+}
+
